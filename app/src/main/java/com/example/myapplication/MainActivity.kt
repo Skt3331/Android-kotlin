@@ -1,6 +1,8 @@
 package com.example.myapplication
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        var welcome = findViewById<Button>(R.id.w1)
+        var Default = findViewById<Button>(R.id.D1)
+        var Button = findViewById<Button>(R.id.B1)
+
+        welcome.setOnClickListener{
+            Toast.makeText(this,"❤️Welcome" ,Toast.LENGTH_SHORT).show()
+
         }
+        welcome.setOnClickListener{
+            Toast.makeText(this,"Default",Toast.LENGTH_LONG).show()
+        }
+
     }
 }
