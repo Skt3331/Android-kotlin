@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class SplashScrren : AppCompatActivity() {
-    private val SPLASH_SCREEN_DELAY: Long = 2000 // 2 seconds
+    private val SPLASH_SCREEN_DELAY: Long = 4000
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
