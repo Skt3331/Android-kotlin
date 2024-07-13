@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.shashank.sony.fancytoastlib.FancyToast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,8 +23,13 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"❤️Welcome" ,Toast.LENGTH_SHORT).show()
 
         }
-        welcome.setOnClickListener{
+        Default.setOnClickListener{
             Toast.makeText(this,"Default",Toast.LENGTH_LONG).show()
+        }
+
+        Button.setOnClickListener{
+            FancyToast.makeText(this,"Hello World !",FancyToast.LENGTH_LONG,FancyToast.DEFAULT,true).show()
+
         }
 
     }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item  android:id="@+id/open"
+      android:title="Opeen"
+      android:icon="@drawable/baseline_file_open_24"
+      />
+  <item android:id="@+id/edit"
+      android:title="Edit"
+      android:icon="@drawable/baseline_mode_edit_24" />
+  <item android:id="@+id/delete"
+      android:title="Delete"
+      android:icon="@drawable/baseline_delete_24" />
+  <item android:id="@+id/rename"
+      android:title="Rename"
+      android:icon="@drawable/baseline_drive_file_rename_outline_24" />
+</menu>

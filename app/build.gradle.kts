@@ -36,6 +36,7 @@ android {
 }
 
 dependencies {
+    implementation("io.github.shashank02051997:FancyToast:2.0.2")
     implementation("com.airbnb.android:lottie:6.4.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
